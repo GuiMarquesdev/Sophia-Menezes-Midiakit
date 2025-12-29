@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3E2723, #4b3b30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh; /* Ocupa a altura total da tela */
+}
+
+.swiper-slide {
+    height: 100vh;
+    display: flex; /* Centraliza o conteúdo do slide */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Evita que a imagem ultrapasse o slide */
+}
+
+.swiper-slide img {
+    max-width: 90%; /* Limita a largura da imagem */
+    max-height: 90vh; /* Limita a altura da imagem */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    cursor: pointer; /* Mostra um cursor de "clique" para indicar zoom */
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none; /* Oculta os botões de navegação */
+}
+
+.swiper-pagination {
+    position: absolute; /* Posiciona a paginação */
+    right: 20px; /* Alinha à direita */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+}
+
+/* Estilo para o zoom */
+.swiper-zoom-container {
+    max-height: 85vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

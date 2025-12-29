@@ -1,0 +1,89 @@
+body {  
+    background-color: #FAD6BE;  
+    font-family:  "Charm", serif;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+}  
+
+.container__card {  
+    background-color: #FFFFFF; 
+    border: 2px solid #905C4C; 
+    border-radius: 20px;  
+    padding: 2em 5em 2em 5em ;  
+    text-align: center;  
+    
+}  
+
+.titulo__principal {  
+    font-size: 2.5em;  
+    margin: 0; 
+}  
+
+.paragrafo {  
+    margin-top: 0.2em;
+    font-size: 1em;  
+    color: #905C4C;  
+}  
+
+.image-container img {  
+    width: 280px;
+    border: 2px solid #905C4C; 
+    border-radius: 20px;
+    margin: 15px 0;  
+}  
+
+.button-container {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 10px;
+    text-decoration: none;  
+    transition: transform 0.3s;
+}  
+
+button {  
+    background-color: #905C4C;
+    font-size: 13px;
+    font-family: "Charm", serif; 
+    color: #FFFFFF;
+    border: 2px solid #FAD6BE;     
+    padding: 0.8em;  
+    border-radius: 15px;  
+    cursor: pointer;  
+    transition: background-color 0.5s;  
+}  
+
+button:hover {  
+    background-color: #7A4A3A;
+    transform: scale(1.05); 
+} 
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajuste do tamanho da fonte */
+    }
+
+    .container__card {
+        padding: 1em; /* Reduz o padding para caber melhor */
+    }
+
+    .titulo__principal {
+        font-size: 2em; /* Reduz o tamanho do título */
+    }
+
+    .paragrafo {
+        font-size: 0.9em; /* Ajusta o tamanho do texto */
+    }
+
+    .image-container img {
+        width: 200px; /* Reduz o tamanho da imagem */
+    }
+
+    button {
+        font-size: 12px; /* Ajusta o tamanho do texto nos botões */
+        padding: 0.6em; /* Reduz o padding dos botões */
+    }
+}
+
