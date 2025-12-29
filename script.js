@@ -1,4 +1,4 @@
-document.getElementById("whatsappButton");
+
 document.getElementById("emailButton").addEventListener("click", function () {
   var destinatario = "Sophiaamenezes10@gmail.com"; // Substitua pelo seu e-mail
   var mailtoLink = "mailto:" + destinatario;
